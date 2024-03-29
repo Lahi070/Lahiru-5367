@@ -22,6 +22,9 @@
     --text-color: #0ea6e2;
     --bg-color: #fff;
 }
+section {
+    padding: 4.5rem 0 1.5rem;
+}
 
 /* Global Styles */
 img {
@@ -42,8 +45,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--bg-color);
-    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    background: rgb(rgba(1, 37, 25, 0.801));
+    box-shadow: 0 8px 11px rgba(20, 97, 87, 0.384);
     padding: 20px 100px;
     transition: 0.5s;
 }
@@ -66,6 +69,7 @@ header {
 .profile span {
     font-size: 13px;
     font-weight: 500;
+    color: var(--bg-color);
 }
 
 .logo {
@@ -73,8 +77,10 @@ header {
     align-items: center;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--text-color);
-    column-gap: 0.5rem;
+    color: #72edfd;
+}
+.logo i{
+    padding-right: 0.5rem;
 }
 
 .navbar {
@@ -85,7 +91,7 @@ header {
 .navbar a {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--bg-color);
     padding: 0.5rem 1rem;
 }
 
@@ -95,4 +101,62 @@ header {
     border-radius: 5rem;
     color: var(--bg-color);
     transition: background 0.5s;
+}
+#menu-icon {
+    font-size: 24px; 
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+}
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(cs\ pictuers/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.container img {
+    width: 650px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+.home-text {
+    padding: 150px 0 200px 150px;
+}
+.home-text span{
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--green-color);
+}
+.home-text h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.btn {
+    padding: 0.6rem 1rem;
+    background: var(--green-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 00.5rem;
+    max-width: 160px;
+}
+.btn .bx {
+    padding: 4px;
+    background: var(--green-color);
+    color: var(--bg-color);
+    border-radius: 1rem;
+    font-size: 20px;
+    margin: auto;
 }
