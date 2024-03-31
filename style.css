@@ -45,8 +45,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(rgba(1, 37, 25, 0.801));
-    box-shadow: 0 8px 11px rgba(20, 97, 87, 0.384);
+    background: rgb(rgba(6, 51, 30, 0.801));
+    box-shadow: 0 8px 11px rgba(26, 117, 105, 0.384);
     padding: 20px 100px;
     transition: 0.5s;
 }
@@ -164,6 +164,82 @@ header {
     background: rgb(7, 236, 160);
     transition: 0.2s ease;
 }
-.swiper-button-next {
-    background: url(cs\ pictuers/);
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(19, 122, 117);
+}
+.heading span {
+    color: #72edfd;
+}
+.Categories {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.Categories-container .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 1rem;
+}
+.Categories-container .box img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    object-position: center;
+}
+.Categories-container .box h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(19, 122, 117);
+}
+.Categories-container .box span {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: rgb(19, 122, 117);
+}
+.Categories-container .box .bx {
+    padding: 10px;
+    background: var(--green-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -8%;
+    display: none;
+}
+.Categories-container .box .bx:hover {
+    background: rgb(21, 240, 167);
+    transition: 0.2s all linear;
+}
+.Categories-container .box:hover .bx {
+    display: block;
+    transition: 0.2s all linear;
+}
+.box1 {
+    background: #9fcef5;
+}
+.box2 {
+    background: #aaf095;
+}
+.box3 {
+    background: #f0b967;
+}
+.box4 {
+    background: #f29ff5;
 }
