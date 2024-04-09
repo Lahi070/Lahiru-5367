@@ -178,18 +178,18 @@ header {
 .heading span {
     color: #0f5842;
 }
-.Categories {
+.categories {
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
 }
-.Categories-container {
+.categories-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 1rem;
     margin-top: 2rem;
 }
-.Categories-container .box {
+.categories-container .box {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -197,24 +197,24 @@ header {
     padding: 20px;
     border-radius: 1rem;
 }
-.Categories-container .box img {
+.categories-container .box img {
     width: 100%;
     height: 170px;
     object-fit: contain;
     object-position: center;
 }
-.Categories-container .box h2 {
+.categories-container .box h2 {
     font-size: 1.5rem;
     font-weight: 700;
     color: rgb(19, 122, 117);
 }
-.Categories-container .box span {
+.categories-container .box span {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: rgb(19, 122, 117);
 }
-.Categories-container .box .bx {
+.categories-container .box .bx {
     padding: 10px;
     background: var(--green-color);
     color: var(--bg-color);
@@ -224,11 +224,11 @@ header {
     bottom: -8%;
     display: none;
 }
-.Categories-container .box .bx:hover {
+.categories-container .box .bx:hover {
     background: rgb(7, 236, 160);
     transition: 0.2s all linear;
 }
-.Categories-container .box:hover .bx {
+.categories-container .box:hover .bx {
     display: block;
     transition: 0.2s all linear;
 }
@@ -288,4 +288,51 @@ header {
     font-weight: 600;
     margin-top: 0.5rem;
     color: rgb(0, 0, 0);
+}
+.products-container .box5 .bx-cart-alt {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background: var(--green-color);
+    color: var(--bg-color);
+    font-size: 20px;
+    border-radius: 0.5rem 0 0.5rem 0;
+}
+.products-container .box5 .bx-cart-alt:hover {
+    background: rgb(7, 236, 160);
+    transition: 0.2s all linear;
+}
+.products-container .box5 .bx-heart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 20px;
+    color: rgb(7, 65, 62);
+}
+.products-container .box5 .discount {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    background:rgb(7, 65, 62);
+    color: var(--bg-color);
+    padding: 4px 18px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+.about {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-text span {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(7, 65, 62);
+}
+.about-text p{
+    margin: 0.5rem 0 1rem;
 }
