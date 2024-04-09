@@ -244,3 +244,48 @@ header {
 .box4 {
     background: #f29ff5;
 }
+.products {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.products-container .box5 {
+    padding: 20px;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+    position: relative;
+}
+.box5 {
+    background: #d4d4f5;
+}
+.products-container .box5 img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+.products-container .box5 span {
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(19, 122, 117);
+}
+.products-container .box5 h2 {
+    font-weight: 600;
+    color: rgb(19, 122, 117);
+}
+.products-container .box5 h3 {
+    font-weight: 600;
+    color: rgb(113, 126, 131);
+}
+.products-container .box5 .price {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: rgb(0, 0, 0);
+}
